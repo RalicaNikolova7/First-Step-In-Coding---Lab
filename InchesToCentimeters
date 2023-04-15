@@ -1,0 +1,14 @@
+using System;
+namespace InchesToCentimeters
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int num = int.Parse(Console.ReadLine());
+            double cent = num * 2.54;
+
+            Console.WriteLine(cent);
+        }
+    }
+}
