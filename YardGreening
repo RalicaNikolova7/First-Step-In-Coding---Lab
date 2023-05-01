@@ -1,16 +1,21 @@
 using System;
+using System.Diagnostics;
+
 namespace YardGreening
+
 {
     class Program
     {
         static void Main(string[] args)
         {
-            double area = double.Parse(Console.ReadLine());
-            double price = area * 7.61;
-            double finalPrice = price * 0.18;
+            double greenedMeters = double.Parse(Console.ReadLine());
+            double salary = greenedMeters * 7.61;
+            double discount = salary * 0.18;
+            double finalSalary = salary - discount;
+            Console.WriteLine($"The final price is: {finalSalary} lv.");
+            Console.WriteLine($"The discount is: {discount} lv.");
 
-            Console.WriteLine($"The final price is: {price} lv.");
-            Console.WriteLine($"The discount is: {finalPrice} lv.");
+
         }
     }
 }
